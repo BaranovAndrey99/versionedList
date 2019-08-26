@@ -1,0 +1,11 @@
+*.class
+*.jar
+target
+.idea
+gradlew*
+.gradle
+gradle
+out
+
+# Project exclude paths
+/build/
