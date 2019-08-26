@@ -90,7 +90,15 @@ public class VersionedList<T> extends AbstractList<T> implements List<T>{
 
         return true;
     }
-
+    
+    /**
+     * Method find existing elements, which creates before
+     * searchable date and deleted elements, which deleted
+     * after searchable date.
+     * @param date - searchable date
+     * @return - list in searchable date.
+     * @throws ParseException - exception of date parsing.
+     */
     public List<T> getListForDate(String date) throws ParseException {
         List<T> gettableDatA = new ArrayList<>();
         Date gettableDatE = dateFormat.parse(date);
